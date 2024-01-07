@@ -1,0 +1,11 @@
+version: '3'
+services:
+  kotlin:
+    container_name: kotlin-server
+    build: .
+    volumes:
+      - ./:/home/app
+    working_dir: /home/app
+    ports:
+      - 6200:8080
+    command: ./gradlew bootRun
