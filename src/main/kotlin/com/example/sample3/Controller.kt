@@ -15,7 +15,7 @@ class HelloController {
     @GetMapping("/world")
     //Getメソッド用。POSTやDeleteそれぞれが存在する
     fun index(model:Model):String { //引数のModelはテンプレートエンジンのHTMLに値を渡すためのもの
-        model.addAttribute("message","ドヤさ！！！checkw/docker!!!!これで変更が反映されてるかな？だめ？・・・・・")
+        model.addAttribute("message","いけてそう！！ドヤさ！！！checkw/docker!!!!これで変更が反映されてるかな？だめ？・・・・・")
         //テンプレートのmessageという属性に渡す値を定義する
         return "index"
         //テンプレートのHTMLファイルのファイル名
